@@ -1,4 +1,41 @@
-.member-photo{
-	height:100px;
-	width:100px;
+body {
+	padding-top: 100px;
+	font-family: 'Helvetica', 'Arial';
+	color: black;
+}
+
+h2 {
+	padding-bottom: 250px;
+}
+.bio {
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 0 1.8125rem 1px 1.8125rem;
+	margin-bottom: 0px;
+}
+
+.photo {
+		border-radius: 80px;
+		overflow: hidden;
+		width: 160px;
+		height: 160px;
+		margin: 0 auto -80px auto;
+		position: relative;
+		top: -80px;
+		border: 6px solid rgba(255, 255, 255, 0.8);
+}
+
+.title {
+		color: $mainBlue;
+		text-align: center;
+		font-size: 1.5rem;
+		font-weight: 500;
+		margin: 0;
+}
+
+.subtitle {
+		color: $mainOrange;
+		text-align: center;
+		font-size: 0.9375rem;
+		font-weight: 400;
+		margin: 0.25rem 0 1.0rem 0;
 }
