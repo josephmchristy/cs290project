@@ -29,6 +29,15 @@ app.get("/events", function(req,res){
 	res.render("events");
 });
 
+app.get("/contact", function(req,res){
+  res.render("contact");
+});
+
+app.post("/contact", function(req,res){
+  console.log("Thank you for your comment!");
+  res.redirect("/");
+});
+
 app.use(function(req,res){
   res.type('text/plain');
   res.status(404);
