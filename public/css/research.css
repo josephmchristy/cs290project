@@ -1,11 +1,17 @@
 body {
 	border: 20px solid #bdc3c7;
 	margin: 20px auto;
-	padding: 20px;
+	padding-top: 10px;
 	max-width: 700px; /*at max, make 700px*/
 	width: 80%; /*when it becomes less than 700px, take up 80% of page*/
 	font-family: 'Helvetica', 'Arial';
 	font-weight: 400;
+	background-color: #2f5572;
+}
+
+.content {
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.8);
 }
 
 .post {
@@ -24,6 +30,13 @@ body {
 .references {
 	border-left: 5px solid #bdc3c7;
 	padding-left: 10px;
+}
+
+.references h3 {
+	color: #3498db;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	font-weight: 400;
 }
 
 hr{

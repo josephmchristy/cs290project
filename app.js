@@ -25,17 +25,16 @@ app.get("/members", function(req,res){
 	res.render("members");
 });
 
-app.get("/events", function(req,res){
-	res.render("events");
-});
-
 app.get("/contact", function(req,res){
   res.render("contact");
 });
 
 app.post("/contact", function(req,res){
+  var context = {};
   console.log("Thank you for your comment!");
-  res.redirect("/");
+  context.name = req.body.name;
+  context.comment = req.body.comment;
+  res.render("comment", context);
 });
 
 app.use(function(req,res){
