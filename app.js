@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(express.static('public'));
 
 app.engine("handlebars", handlebars.engine);
 app.set("view engine", "handlebars");
@@ -16,8 +17,16 @@ app.get("/", function(req,res){
   res.render("home");
 });
 
-app.get("/page1", function(req,res){
-	res.render("page1");
+app.get("/research", function(req,res){
+  res.render("research");
+});
+
+app.get("/members", function(req,res){
+	res.render("members");
+});
+
+app.get("/events", function(req,res){
+	res.render("events");
 });
 
 app.use(function(req,res){
